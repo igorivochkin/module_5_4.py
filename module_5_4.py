@@ -59,7 +59,7 @@ class House:
         if isinstance(other, House):
             return self.number_of_floors >= other.number_of_floors
 
-    def __gt__(self, other):
+    def __ne__(self, other):
         if isinstance(other, House):
             return self.number_of_floors != other.number_of_floors
 
